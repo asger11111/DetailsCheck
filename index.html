@@ -215,11 +215,11 @@
         madarsaAddress: "Banaras"
       },
       {
-        id: "S-Ramzan-23",
+        id: "S-23",
         name: "Mohammad Shahbaz",
         fatherName: "Mr. Reyaz Ahmad",
         whatsapp: "7991952368",
-        address: "Karisath Post, Karisath, Ghosi, Mau",
+        address: "Karisath Post, Karisath, Mau",
         madarsaName: "Madarsa Shamsul Uloom Ghosi Mau",
         madarsaAddress: "Ghosi Mau"
       },
@@ -332,7 +332,7 @@
         madarsaAddress: "Banaras"
       },
       {
-        id: "S-Ramzan-24",
+        id: "S-24",
         name: "Mohammad Sajid",
         fatherName: "Mr. Habibullah",
         whatsapp: "9517454342",
@@ -384,8 +384,8 @@
       output.innerHTML = "";
 
       // Validate Student ID format
-      if (!studentId.startsWith("S-Ramzan-")) {
-        output.innerHTML = `<p class="error">Invalid Student ID format. It must start with "S-Ramzan-".</p>`;
+      if (!studentId.startsWith("S-Ramzan-") && !studentId.startsWith("S-")) {
+        output.innerHTML = `<p class="error">Invalid Student ID format. It must start with "S-Ramzan-" or "S-".</p>`;
         return;
       }
 
